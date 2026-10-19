@@ -1,0 +1,10 @@
+name: Auto Update
+on:
+  workflow_dispatch:
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run update
+        run: echo "Автообновление"
